@@ -27,7 +27,6 @@ const TopRatedPage = () => {
 
   return (
     <div className="top-rated-page">
-      {/* <h2>Top Rated Movies</h2> */}
       <div className="movie-grid">
         {topRated.map((movie) => (
           <MovieCard key={movie.imdbID} movie={movie} />

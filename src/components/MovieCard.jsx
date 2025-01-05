@@ -28,9 +28,6 @@ const MovieCard = ({ movie }) => {
     <Link style={{textDecoration:'none'}} to={`/movie/${movie.imdbID}`}>  
     <div className="movie-card">
       <img
-        // src={movie.Poster}
-        // alt={movie.Title}
-
         src={movie.Poster !== 'N/A' ? movie.Poster : placeholderImage}
         alt={movie.Title}
         className="movie-poster" 

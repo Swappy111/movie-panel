@@ -27,7 +27,6 @@ const UpcomingMoviesPage = () => {
 
   return (
     <div className="upcoming-movies-page">
-      {/* <h2>Upcoming Movies</h2> */}
       <div className="movie-grid">
         {upcoming.map((movie) => (
           <MovieCard key={movie.imdbID} movie={movie} />

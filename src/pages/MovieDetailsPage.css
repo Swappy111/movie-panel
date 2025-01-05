@@ -127,7 +127,7 @@
   }
 }
 
-/* Mobile View (0px - 768px) */
+
 @media (max-width: 768px) {
   .movie-header {
     flex-direction: column;

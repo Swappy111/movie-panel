@@ -85,7 +85,7 @@ ul{
   display: none;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .main {
     flex-direction: row;

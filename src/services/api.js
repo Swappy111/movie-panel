@@ -2,11 +2,11 @@ import axios from 'axios';
 
 // const API_KEY = 'c45a857c193f6302f2b5061c3b85e743';
 // const BASE_URL = 'https://api.themoviedb.org/3';
-
 // const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
+
 let apikey = process.env.REACT_APP_API_KEY;
 let baseUrl = process.env.REACT_APP_BASE_URL;
-console.log(apikey, baseUrl)
+
 export const fetchPopularMovies = (page = 1) =>
 //   axios.get(`${BASE_URL}/movie/popular?api_key=${API_KEY}&language=en-US&page=${page}`);
       axios.get(`${baseUrl}/?apikey=${apikey}&s=popular&type=movie&page=${page}`);

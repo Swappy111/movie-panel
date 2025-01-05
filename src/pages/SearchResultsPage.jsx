@@ -7,7 +7,7 @@ import './SearchResultsPage.css';
 import { fetchSearchResultsAsync } from '../store/moviesSlice';
 
 const SearchResultsPage = () => {
-  const { query } = useParams(); // Get the query from URL
+  const { query } = useParams(); 
   const dispatch = useDispatch();
   const { searchResults, loading, error } = useSelector((state) => state.movies);
 

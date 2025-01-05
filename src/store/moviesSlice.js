@@ -73,9 +73,9 @@ export const fetchPopularMoviesAsync = (page = 1) => async (dispatch) => {
 
     try {
       const response = await fetchPopularMovies(page);
-      console.log("OMDb API Response:", response.data.Search); // For debugging
+      console.log("OMDb API Response:", response.data.Search); 
       if (response) {
-        dispatch(setPopularMovies(response.data.Search)); // OMDb stores movies in the 'Search' field
+        dispatch(setPopularMovies(response.data.Search)); 
       } else {
         throw new Error("No movies found");
       }

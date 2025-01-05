@@ -30,7 +30,6 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      {/* <h2>Popular Movies</h2> */}
       <div className="movie-grid">
         {popular.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />

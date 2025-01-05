@@ -1,0 +1,24 @@
+.top-rated-page {
+    padding: 20px;
+    background-color: #272b33;
+
+  }
+  
+  .top-rated-page h2 {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  

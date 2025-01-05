@@ -1,0 +1,34 @@
+.movie-card {
+    /* border: 1px solid #ccc; */
+    /* border-radius: 8px; */
+    overflow: hidden;
+    text-align: left;
+    background-color: transparent;
+    color: #fff;
+    transition: transform 0.3s ease;
+    /* width: 100%; */
+    /* height: 400px; */
+    
+  }
+  img[alt]{
+    color: gray;
+  }
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-poster {
+    width: 100%; 
+    height: auto;
+  }
+  
+  .movie-title {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .movie-rating {
+    font-size: 0.9rem;
+    color: #ffcc00;
+  }
+  

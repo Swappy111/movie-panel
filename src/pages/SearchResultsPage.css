@@ -1,0 +1,25 @@
+.search-results-page {
+    padding: 20px;
+    /* background-color: #272b33; */
+    /* height: 100%; */
+  }
+  body{
+    background-color: #272b33;
+  }
+  .search-results-page h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .movie-grid .movie-card {
+    max-width: 200px;
+  }
+  

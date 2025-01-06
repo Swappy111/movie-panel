@@ -11,7 +11,7 @@ const MovieCard = ({ movie }) => {
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=f93c5613&i=${movie.imdbID}`);
+        const response = await fetch(`https://www.omdbapi.com/?apikey=f93c5613&i=${movie.imdbID}`);
         const data = await response.json();
         if (data && data.imdbRating) {
           setImdbRating(data.imdbRating);

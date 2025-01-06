@@ -26,13 +26,12 @@ const HomePage = () => {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
 
-  console.log(popular)
 
   return (
     <div className="home-page">
       <div className="movie-grid">
         {popular.map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
+          <MovieCard key={movie.imdbID} movie={movie} />
         ))}
       </div>
 

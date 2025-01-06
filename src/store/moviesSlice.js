@@ -46,7 +46,10 @@ const moviesSlice = createSlice({
       state.searchResults = action.payload; 
       state.loading = false; 
       state.error = null;
-    }
+    },
+    clearError: (state) => {
+      state.error = null; // ✅ Clear error state
+    },
   },
 });
 
@@ -58,7 +61,8 @@ export const {
   setTopRatedMovies,
   setUpcomingMovies,
   setMovieDetails,
-  setSearchResults
+  setSearchResults,
+  clearError
 } = moviesSlice.actions;
 
 export const fetchPopularMoviesAsync = (page = 1) => async (dispatch) => {
@@ -73,7 +77,7 @@ export const fetchPopularMoviesAsync = (page = 1) => async (dispatch) => {
 
     try {
       const response = await fetchPopularMovies(page);
-      console.log("OMDb API Response:", response.data.Search); 
+      // console.log("OMDb API Response:", response.data.Search); 
       if (response) {
         dispatch(setPopularMovies(response.data.Search)); 
       } else {
@@ -145,11 +149,11 @@ export const fetchTopRatedMoviesAsync = (page = 1) =>  async (dispatch) => {
     dispatch(setLoading());
     try {
       const response = await searchMovies(query, page); 
-      console.log("Search API Response:", response.data);
+      // console.log("Search API Response:", response.data);
       if (response.data && response.data.Search) {
         dispatch(setSearchResults(response.data.Search)); 
       } else {
-        throw new Error('No search results found');
+        throw new Error('No results found for the query..!');
       }
     } catch (error) {
       console.error('Error fetching search results:', error.message);

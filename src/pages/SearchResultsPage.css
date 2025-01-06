@@ -23,3 +23,17 @@
     max-width: 200px;
   }
   
+  .goback{
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #333a3f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .goback:hover{
+    background-color: #020b17;
+
+  }
